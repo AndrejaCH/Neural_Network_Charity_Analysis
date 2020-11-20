@@ -1,7 +1,7 @@
 # Neural Network Charity Analysis
 *Deep Learning ML*
 
-## Project Overview Explain the purpose of this analysis.
+## Project Overview
 For this project I am using **Neural Networks (also known as artificial neural networks, or ANN) Machine Learning algorithms** and Python **TensorFlow** library in order create a binary classifier that is capable of predicting whether applicants will be successful if funded by nonprofit foundation *Alphabet Soup*. This will help ensure that the foundation’s money is being used effectively. We are creating a robust deep learning neural network capable of interpreting large complex datasets. In order to use Neural Networks Machine Learning algorithms, we spend most time cleaning and preparing data for models. The actual coding can be as short as a few lines of code.
 
 ## Resources
@@ -16,12 +16,15 @@ For this project I am using **Neural Networks (also known as artificial neural n
 ### Data Preprocessing
 
 **What variable(s) are considered the target(s) for your model?**
+
 Target output also known as dependent variable. That is our “IS_SUCCESSFULL” column. We are using this variable to train our ML model.
 
 **What variable(s) are considered to be the features for your model?**
+
 Input values also known as independent variables are considered to be features for the model. Those variables include all columns, except target variable and the one we dropped (“EIN" and "NAME”) in first trial and (“EIN”) for optimalization model.
 
 **What variable(s) are neither targets nor features, and should be removed from the input data?**
+
 The variables that should be removed and are neither targets nor features are variables that are meaningless for the model. The variables that don’t add to the accuracy to the model. One of the examples would be variables with all unique values. Another thing to keep in mind is to take care of the Noisy data and outliers. We can approach to this by dropping outliers or bucketing. 
 
 ### Compiling, Training, and Evaluating the Model
@@ -64,7 +67,7 @@ In order to increase model performance, I took the following steps:
 
 -	Checked input data and brought back **NAME** column, that was initially skipped. I set a condition on the values that are less than 50 in “Other” group. That reduced the number of unique categorical values by binning the values.
 -	Binned the **ASK_AMT** values.
--	At first, I added the third layer with 40 neurons; however, I’ve changed back to 2 layers and because the results did not show better results. 
+-	At first, I added the third layer with 40 neurons; however, I’ve changed back to 2 layers, because the results did not improve much if any. 
 -	Increase neurons for each layer (200 for 1st, 90 for 2nd).
 -	Increase Epochs to 500.
 
