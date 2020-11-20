@@ -53,7 +53,7 @@ Yes. After few configurations I was able to achieve the target model performance
 </p>
 
 <p align="center">
-<i>Figure 3: Accuracy After Optimization.</i>
+<i>Figure 2: Accuracy After Optimization.</i>
 </p>
 
 <p align="center">
@@ -61,7 +61,7 @@ Yes. After few configurations I was able to achieve the target model performance
 </p>
 
 <p align="center">
-<i>Figure 2: Accuracy Before Optimization.</i>
+<i>Figure 3: Accuracy Before Optimization.</i>
 </p>
 
 
